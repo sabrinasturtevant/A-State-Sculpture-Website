@@ -1,0 +1,60 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  color: grey;
+  font-family: 'Source Serif Pro', serif;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+h3 {
+  color: grey;
+  font-family:'Kumbh Sans', sans-serif;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+p {
+  font-family:'Kumbh Sans', sans-serif;
+  text-align: left;
+  font-size: 12px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  color: grey
+}
+
+div {
+  width: 800px;
+  height: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+button {
+  border: none;
+  font-family:'Kumbh Sans', sans-serif;
+  background-color: inherit;
+  border-radius: 10px;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  /* joe how do I change the alignment? */
+
+}
+
+button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.btn:hover {background: #eee;}
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
