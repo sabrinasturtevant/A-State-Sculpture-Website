@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--java file connection-->
+    <script src="myscripts.js"></script>
+
     <meta charset="utf-8">
     <link href="style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
@@ -10,15 +13,41 @@
 
 <main>
   <body>
-  <form action="studentPage">
-    <button type="button">Home</button>
-  </form>
-    <a href="studentPage" class="button">Click Here</a>
-    <!--having trpouble remebering how to connect html pages to html pages?-->
-    <button type="button">Fall 2019</button>
-    <button type="button">Spring 2020</button>
-    <button type="button">Fall 2021</button>
-    <div> </div>
+    <div class="buttons">
+      <a href="studentPage.html"><button type="button">Home</button></a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="dropdownFunc()">Fall 2019</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="studentPage.html">Link 1</a>
+        <a href="studentPage.html">Link 2</a>
+        <a href="studentPage.html">Link 3</a>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="dropdownFunc()">Spring 2020</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="studentPage.html">Link 1</a>
+          <a href="studentPage.html">Link 2</a>
+          <a href="studentPage.html">Link 3</a>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="dropdownFunc()">Fall 2020</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="studentPage.html">Link 1</a>
+            <a href="studentPage.html">Link 2</a>
+            <a href="studentPage.html">Link 3</a>
+          </div>
+
+    </div>
+  </div>
+
+<!--
+<div>
+  <img src="photos/background2.jpg" alt="thingy">
+</div>
+-->
+
+
+<div>
     <h1> A-State Sculpture </h1>
     <h3> comments and thoughts </h3>
     <p>This webpage is dedicated to receive feedback from the public for our sculpture classes at ASU.
@@ -28,5 +57,7 @@ Feel free to browse the students section and leave a comment.
 
 You will also find QR codes around campus to link you directly to your favorite artist. </p>
   </body>
+</div>
+
 <main>
 </html>
