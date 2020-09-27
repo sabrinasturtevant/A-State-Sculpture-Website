@@ -109,6 +109,8 @@ button:hover {
 
 
 body {
- background-image: url("background2");
- background-color: #cccccc;
+ background-image: url('photos/background2.jpeg');
+ background-repeat: no-repeat;
+ width: auto;
+ height: auto;
 }
