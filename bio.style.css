@@ -1,0 +1,14 @@
+p {
+  font-family:'Kumbh Sans', sans-serif;
+  text-align: left;
+  font-size: 12px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  color: grey
+}
+
+#hp  {
+float: top;
+ margin: 0 15px 0 0;
+}
