@@ -9,6 +9,13 @@ h1 {
   text-align: left;
 }
 
+h2 {
+  color: grey;
+  font-family: 'Source Serif Pro', serif;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
 h3 {
   color: grey;
   font-family:'Kumbh Sans', sans-serif;
