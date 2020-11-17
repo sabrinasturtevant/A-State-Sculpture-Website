@@ -24,6 +24,7 @@ h1 {
   text-align: left;
 }
 
+
 p {
   font-family:'Kumbh Sans', sans-serif;
   text-align: left;
@@ -37,3 +38,28 @@ p {
 div {
   margin: 20px;
 }
+
+button {
+  border: none;
+  font-family:'Kumbh Sans', sans-serif;
+  background-color: inherit;
+  border-radius: 10px;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  /*place inside nav element, float:right property, give new clear:both or clear:right */
+
+}
+
+button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.btn:hover {background: #eee;}
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
