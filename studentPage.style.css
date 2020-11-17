@@ -1,3 +1,17 @@
+body {
+  background-color: lightblue;
+}
+
+#grad {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+
+body {
+  margin: 75px;
+}
+
+
 h1 {
   color: grey;
   font-family: 'Source Serif Pro', serif;
@@ -32,6 +46,13 @@ p {
   letter-spacing: .5px;
   line-height: 20px;
   text-align: left;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 button {
