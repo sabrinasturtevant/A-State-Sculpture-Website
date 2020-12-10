@@ -125,11 +125,12 @@ padding-left: 40px;
   margin: 0;
   height: 150px;
   display: static;
-  background: url('photos/header.jpg') no-repeat fixed;
+  background: url('photos/header.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
 
 /* Dropdown Content (Hidden by Default) */

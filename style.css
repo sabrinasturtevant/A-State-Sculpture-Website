@@ -28,7 +28,8 @@ p {
   word-spacing: 3px;
   letter-spacing: 1px;
   line-height: 1.4;
-  color: dimgray
+  color: dimgray;
+
 }
 
 div {
@@ -46,6 +47,7 @@ button {
   cursor: pointer;
   display: inline-block;
   align-items: right;
+
   /*place inside nav element, float:right property, give new clear:both or clear:right */
 
 }
@@ -71,13 +73,10 @@ button:hover {
 .dropbtn {
   background-color: darkgrey;
   color: white;
-  padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
-  align-self: right;
-  align-items: right;
-  align-content: right;
+  margin-top: 40px;
 }
 
 /* Dropdown button on hover & focus */
@@ -85,14 +84,30 @@ button:hover {
   background-color: grey;
 }
 
-/* The container <div> - needed to position the dropdown content */
+/* The container <div> - needed to position the dropdown content
+float right reverses order,  */
 .dropdown {
-  position: right;
-  align-items: right;
-  align-self: right;
-  align-content: right;
-  display: inline-block;
+ display: inline;
+  left: 100px;
+  right: 0px;
+  width: 500px;
+padding-left: 40px;
 
+
+}
+
+/*
+.all {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  height: 150px;
+  display: static;
+  background: url('photos/header.jpg') no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -118,7 +133,7 @@ button:hover {
 .dropdown-content a:hover {background-color: #ddd}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {display:inline-block;}
 
 
 
