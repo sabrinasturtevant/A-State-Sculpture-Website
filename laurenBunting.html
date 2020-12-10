@@ -43,13 +43,13 @@
 -->
 
 
-    <h1> Lauren Bunting </h1>
+    <p class = "huge"> Lauren Bunting </p>
     <br>
     <br>
 
     <img src="photos/projects/buntingOne.jpeg" alt="Mime Sculpture" class="center">
 
-    <h2> Mime Your Own Business </h2>
+    <p class = "title"> Mime Your Own Business </p>
       <p> Gloves. Facepaint. Unspeakable Acts. Mimes are theatrical characters that are notoriously known for getting themselves into sticky situations. Of course, most of us have caught them in the act of being stuck in a box. These boxes however are invisible to the viewer’s eye and leave the mime that they contain at a slight disadvantage. It is unknown what these speechless characters have done to deserve such punishment or how they will escape. What are they hiding behind the facepaint and gloves? We may never know. But one thing I know for sure: Whatever you do, stay away from boxes. ​</p>
     <h4> Comments </h4>
 
@@ -64,7 +64,7 @@
     <img src="photos/projects/buntingTwo.jpeg" alt="Dark Hallway Sculpture" class="center">
 
 
-    <h2> Wait, I Can't See </h2>
+    <p class = "title"> Wait, I Can't See </p>
       <p> It is a common fear to be afraid of the dark when we are younger. Light is a safe haven, where the dark is not. The darkness leaves you incapacitated, visionless, and unsure of what lies just two feet in front of you. It seems almost crazy to submit oneself into the darkness without any source of light. With this idea in mind, we decided to create an interactive piece that manipulates darkness in a way that catches the audience by surprise. You are welcome to enter our piece and experience this idea for yourself. Please watch your step. ​</p>
     <h4> Comments </h4>
 
@@ -76,6 +76,8 @@
     <br>
     <br>
 
+
+<!--
     <form>
       <label for="fname">First name:</label>
       <input type="text" id="fname" name="fname"><br>
@@ -88,6 +90,79 @@
 <br><br>
       <input type="submit" value="Submit">
     </form>
+-->
+
+<title>title</title>
+<link href="studentPage.style.css" type="text/css" rel="stylesheet">
+
+<div class="container">
+<div class="columns">
+ <div class="column col-auto col-mx-auto">
+ <div class="form-group">
+<form target="_self"
+   id="bootstrapForm"
+   method="POST">
+ <fieldset>
+     <h2>Comment Form</h2>
+ </fieldset>
+
+ <fieldset>
+     <legend for="610609209">First Name</legend>
+     <div class="form-group">
+         <input id="1248082634" type="text" name="entry.1248082634" class="form-control" required>
+     </div>
+ </fieldset>
+
+ <fieldset>
+     <legend for="1214740323">Last Name</legend>
+     <div class="form-group">
+         <input id="537543589" type="text" name="entry.537543589" class="form-control" required>
+     </div>
+ </fieldset>
+
+ <fieldset>
+     <legend for="238925373">Email</legend>
+     <div class="form-group">
+         <input id="950221048" type="text" name="entry.950221048" class="form-control" required>
+     </div>
+ </fieldset>
+
+ <fieldset>
+     <legend for="1171934047">Your message:</legend>
+     <div class="form-group">
+         <textarea id="1895304209" name="entry.1895304209" class="form-control" required></textarea>
+     </div>
+ </fieldset>
+ <input type="hidden" name="fvv" value="1">
+ <input type="hidden" name="fbzx" value="8081235427209087729">
+
+ <input type="hidden" name="pageHistory" value="0">
+
+ <input class="btn-btn-primary" type="submit" value="Submit">
+</form>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+<script>
+$('#bootstrapForm').submit(function (event) {
+ event.preventDefault()
+ var extraData = {}
+ $('#bootstrapForm').ajaxSubmit({
+     data: extraData,
+     dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+     error: function () {
+         // Submit of form should be successful but JSONP callback will fail because Google Forms
+         // does not support it, so this is handled as a failure.
+         alert('Form Submitted. Thanks.')
+         // You can also redirect the user to a custom thank-you page:
+         // window.location = 'http://www.mydomain.com/thankyoupage.html'
+     }
+ })
+})
+</script>
 
 </body>
 

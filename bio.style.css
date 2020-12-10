@@ -22,6 +22,8 @@ h1 {
   font-family: 'Source Serif Pro', serif;
   letter-spacing: 1px;
   text-align: left;
+  padding: 5px 28px;
+
 }
 
 
@@ -32,22 +34,36 @@ p {
   word-spacing: 3px;
   letter-spacing: 1px;
   line-height: 1.4;
-  color: grey
+  color: grey;
+
+}
+
+.first {
+  padding: 5px 28px;
+
 }
 
 div {
-  margin: 20px;
+  margin: 10px;
 }
+
+
+img {
+  padding: 5px 28px;
+}
+
 
 button {
   border: none;
   font-family:'Kumbh Sans', sans-serif;
-  background-color: inherit;
+  background-color: darkgrey;
+  color: white;
   border-radius: 10px;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
+  align-items: right;
   /*place inside nav element, float:right property, give new clear:both or clear:right */
 
 }
@@ -63,3 +79,58 @@ button:hover {
 .warning {color: orange;}
 .danger {color: red;}
 .default {color: black;}
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: darkgrey;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: grey;
+}
+
+/* The container <div> - needed to position the dropdown content
+float right reverses order,  */
+.dropdown {
+  position: fixed;
+  right: 0px;
+  width: 500px;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  font-family:'Kumbh Sans', sans-serif;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: dimgrey;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
